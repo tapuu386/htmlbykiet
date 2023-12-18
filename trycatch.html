@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    first name:<br>
+    <input type="text"id="firstname"value="2">
+    <br>
+    last name:<br>
+    <input type="text"id="firstname"value="3">
+    <br><br>
+    <input type="submit"onclick="myfunction(4,3)">
+    <p id="demo">df</p>
+    <script>
+        function myfunction(p1,p2){
+         //const num1=parseInt(prompt('enter the first number'));
+         var num1=parseInt(document.getElementById("firstname").value);
+         //const num2=parseInt(prompt('enter the second number'));
+         var num2=parseInt(document.getElementById("lastname").value);
+         const sum =num1+num2;
+         document.getElementById("demo").innerHTML=sum;
+        }
+    </script>
+</body>
+</html>
